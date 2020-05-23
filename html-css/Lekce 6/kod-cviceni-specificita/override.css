@@ -1,0 +1,14 @@
+/* odmažte heslo " !important " a upravte CSS selektory tak, ať všechna pravidla níže uvedená fungují */
+
+article.news-domestic {
+  background-color: #2ecc71 !important;
+  border: 1px solid #208e4f !important;
+}
+
+article.news-domestic header h2 {
+  color: #712ecc !important;
+}
+
+.hot-news article div {
+  height: 180px !important;
+}

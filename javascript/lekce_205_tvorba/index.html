@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kino</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Program kin</h1>
+      <div class="cinema">
+        <h2 class="cinema__head">
+          <!-- doplňte název kina -->
+        </h2>
+        <div class="cinema__movies">
+          <!-- doplňte seznam filmů -->
+        </div>
+        <template id = "movie_template">
+          <div class="movie">
+            <span class="movie__title">{{ title }}</span>
+            <span class="movie__time">{{time}}</span>
+            <span class="movie__hall">Sál č. {{hall}}</span>
+          </div>
+        </template>
+      </div>
+    </div>
+    <!-- <script src="01_sablony.js"></script> -->
+    <!-- <script src="02_nazev_kina.js"></script> -->
+    <!-- <script src="03_program_kina.js"></script> -->
+    <script src="04_program_kina_2.js"></script>
+  </body>
+</html>

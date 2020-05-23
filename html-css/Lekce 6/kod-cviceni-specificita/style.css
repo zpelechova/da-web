@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.hot-news .red-text,
+.section-title .red-text {
+  color: #e74c3c;
+}
+
+.hot-news .blue-text,
+.section-title .blue-text {
+  color: #2980b9;
+}
+
+.blockShadow {
+  -webkit-box-shadow: 8px 8px 11px 0px rgba(127, 140, 141, 1);
+  -moz-box-shadow: 8px 8px 11px 0px rgba(127, 140, 141, 1);
+  box-shadow: 8px 8px 11px 0px rgba(127, 140, 141, 1);
+}
+
+.hot-news {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.news-today {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border: 1px solid #bdc3c7;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.hot-news article {
+  box-sizing: border-box;
+  width: 100%;
+  background: #ecf0f1;
+  padding: 1rem;
+  position: relative;
+}
+
+.hot-news article.news-domestic {
+  background-color: #add5f0;
+}
+
+.hot-news article .titleImg {
+  height: 250px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hot-news article .news-text {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+article .btn {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.btn.news-domestic {
+  background-color: #add5f0;
+  color: #000;
+}
+
+.btn.news-abroad {
+  background: #ecf0f1;
+  color: #000;
+}
+
+.btn:hover {
+  border: 2px solid #e74c3c;
+  padding: calc(0.5rem - 2px) calc(1rem - 2px);
+  background-color: #fff;
+  color: #e74c3c;
+}
+
+.idImg1 {
+  background-image: url(img/primacnn.jpg);
+}
+
+.idImg2 {
+  background-image: url(img/boeing.jpg);
+}
+
+.idImg3 {
+  background-image: url(img/facebook.jpg);
+}
+
+.idImg4 {
+  background-image: url(img/stredceska.JPG);
+}
+
+.idImg5 {
+  background-image: url(img/elvis.jpg);
+}
+
+.idImg6 {
+  background-image: url(img/vesmir.jpg);
+}
+
+@media only screen and (min-width: 601px) {
+  .hot-news {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .hot-news article {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .hot-news article {
+    width: calc(33% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 1501px) {
+  .hot-news {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}

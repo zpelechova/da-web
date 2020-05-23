@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#profilePicture {
+  height: 30vh;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #424687;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.siteNav {
+  background-color: #424687;
+  height: 5vh;
+}
+
+.siteNav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 1rem;
+  line-height: 5vh;
+}
+
+.siteNav li a {
+  text-decoration: none;
+  color: #add8e6;
+  letter-spacing: 0.25rem;
+}
+
+main {
+  height: 95vh;
+  background: linear-gradient(45deg, #fba257 0%, #f44242 50%, #ab3434 100%);
+}
+
+.main-profile {
+  padding-top: 15vh;
+}
+
+main h1,
+main p {
+  padding-top: 2rem;
+  text-align: center;
+  color: #0e367c;
+}

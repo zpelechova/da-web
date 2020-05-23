@@ -1,0 +1,16 @@
+/* nastavíme intuitivnější box model (border-box) - tyto 3 řádky prosím nemaž */
+html { box-sizing: border-box; }
+*, *:after, *:before { box-sizing: inherit; }
+
+body {
+	padding: 1em;
+	font: 16px/1.5 sans-serif;
+}
+
+.row p {
+	padding: 1em;
+	border: 1px solid #888;
+	background-color: lightblue;
+}
+
+/* ------------------------------------------ */

@@ -1,0 +1,13 @@
+/*
+Nastav v CSS pro třídu .sloupec tak,
+aby byly všechny 3 obdélníky vedle sebe.
+
+Nápověda: Pokud neumíš flexbox (což zatím asi neumíš, ten budeme brát později),
+             tak se na to hodí vlastnost float nebo display: inline-block.
+
+Go, girl!
+*/
+
+.sloupec {
+  float: left;
+}

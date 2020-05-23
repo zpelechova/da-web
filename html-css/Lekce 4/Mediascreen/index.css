@@ -1,0 +1,182 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  display: flex;
+}
+
+header,
+footer {
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 3rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-text {
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.logo-section img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+ul {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0 0.5rem;
+}
+
+article p {
+  text-align: justify;
+}
+
+.back-yellow {
+  background-color: #fa983a;
+}
+
+.back-yellowLight {
+  background-color: #fad390;
+}
+
+.back-red {
+  background-color: #eb2f06;
+}
+
+.back-redLight {
+  background-color: #f8c291;
+}
+
+.back-blue {
+  background-color: #1e3799;
+}
+
+.back-blueLight {
+  background-color: #4a69bd;
+}
+
+.back-cyan {
+  background-color: #3c6382;
+}
+
+.back-cyanLight {
+  background-color: #82ccdd;
+}
+
+.whiteFont {
+  color: #fff;
+}
+
+/* flex sollution */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: calc(100vh - 6rem);
+  width: 100%;
+  margin: 0px;
+}
+
+main article {
+  width: 300px;
+  padding: 0.5rem;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+main article h2 {
+  text-align: center;
+}
+
+main article img {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+main article .article-description {
+  height: calc(100% - 100px);
+  display: flex;
+  /*align-items: center;*/
+}
+
+article {
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 10px solid white;
+}
+
+.tech-logo {
+  height: 3rem;
+}
+
+footer {
+  height: 6rem;
+}
+
+
+@media screen and (max-width: 320px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .logo-text {
+    display: none;
+  }
+  footer {
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  main article {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+  main {
+    justify-content: flex-start;
+  }
+  main article {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1201) {
+  main{
+    max-width: 1600px;
+    margin: 0 auto;
+    }
+  article {
+    width: 25%;
+  }
+}

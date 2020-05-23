@@ -1,0 +1,20 @@
+.zadani{
+  font-weight: bold;
+}
+
+.parent{
+  font-size: 1rem;
+}
+
+.parent .child{
+  font-size: 0.90rem;
+  padding-left: 1rem;
+}
+
+.part:nth-child(3n) {
+  color: red;
+} 
+
+.parent .child {
+  color: red;
+}

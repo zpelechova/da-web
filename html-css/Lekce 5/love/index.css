@@ -1,0 +1,74 @@
+body{
+  font-family: Arial;
+}
+
+.animated1 {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  transition: all 1s linear 0.5s;
+}
+
+.animated1:hover {
+  opacity: 0.1;
+}
+
+.animated2 {
+  width: 100px;
+  height: 100px;
+  background: #a0a0a0;
+  transition: all 5s cubic-bezier(.64,1.65,.9,-0.64) 0.25s;
+  border: 5px dotted green;
+}
+
+.animated2:hover {
+  rotate: 81deg;
+  border: 3px solid red;
+}
+
+.target_parent{
+  width: 350px;
+  height: 300px;
+  background: orange;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+div p {
+  text-align: center;
+}
+
+.target_parent p{
+  font-size: 2rem;
+}
+
+/* Write CSS code below */
+
+.target_child p {
+  opacity: 0;
+  cursor: pointer;
+  transition: all 7s linear 0.5s;
+}
+
+.target_child p:hover {
+  opacity: 1;
+}
+
+button {
+  border: 2px solid orange;
+  padding: 5px 15px;
+  outline: none;
+  color: white;
+  background-color: orange;
+  border-radius: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all .2s;
+}
+button:hover {
+  color: orange;
+  background-color: white;
+}

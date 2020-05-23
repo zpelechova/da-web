@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="form-body">
+        <form
+          method="post"
+          action="https://www.w3schools.com/action_page.php"
+          target="_blank"
+          class="site-form"
+        >
+          <label for="wholeName">Celé jméno:</label>
+          <input
+            type="text"
+            id="wholeName"
+            name="wholeName"
+            placeholder="Jana Nováková"
+            required
+            autofocus
+          />
+          <!-- <label for="nname">Přezdívka:</label>
+          <input type="text" id="nname" name="nname" placeholder="Geek" /> -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" value="@" required />
+          <label for="phone">Telefonní číslo</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="707-101-909"
+          />
+          <label for="colour">Oblíbená barva</label>
+          <input type="text" name="colour" id="colour" placeholder="Růžová" />
+          <label for="number">Oblíbené číslo</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="7"
+            min="1"
+            max="100"
+          />
+          <label for="date">Dnešní datum</label>
+          <input type="text" name="date" id="date" readonly />
+
+          <input class="submit" type="submit" value="Odeslat" />
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+růžová: #c5308a
+světle šedá: #f0f0f0
+*/
+
+/* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+
+
+/* TYPOGRAFIE - p9smo, nadpisy, ... */
+
+body {
+  /* ve3ker7 text na webu bude písmem Lora */
+  font-family: 'Lora', serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* všechny nadpisy (už jsou písmem Lora) budou netučnou kurzívou */
+  font-weight: normal;
+  font-style: italic;
+}
+
+h2 {
+  /* všechny nadpisy sekcí (h2) jsou velkým písmem a vycentrované a je pod nimi velká mezera*/
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+h3 {
+  /* nadpisy bloků uvnitř sekce (h3) jsou růžové */
+  color: #c5308a;
+}
+
+
+
+
+
+
+/* SEKCE */
+.sekce {
+  /* všechny sekce mají odsazení shora a zespodu */
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.sekce-seda {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+/* AKCE - ru6ov7 prou6ek pod hlavn9m bannerem */
+.akce {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #c5308a;
+  color: #fff;
+}
+
+.akce h2 {
+  font-weight: bold;
+}
+
+
+
+
+/* KADERNICE */
+.kadernice {
+  /* všecny obrázky v sekci kadeřnice budou mít tečkovaný růžový rámeček */
+  padding: 2px;
+  border: 2px dotted#c5308a;
+}
+
+
+
+
+/* FOTOGALERIE */
+.foto {
+  /* fotky v galerii jsou zešedlé pomocí filtru */
+  filter: grayscale(1);
+  /* při změně hodnoty se bude hodnota animovat během 0,3 vteřiny */
+  transition: 0.3s;
+}
+
+.foto:hover {
+  /* při najetí myši nad fotku zredukuj filtr na 0 (tj. vrátí se do fotky barva) */
+  filter: grayscale(0);
+}
+
+
+
+
+/* MENU */
+/* musíme stylovat s takovou specificitou, jako sám Bootstrap, jinak se naám nepodaří menu obarvit */
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #c5308a;
+}

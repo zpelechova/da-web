@@ -1,0 +1,48 @@
+body {
+    font: 16px/1.5 sans-serif;
+}
+
+.modal {
+    width: 50vw;
+    height: 40vh;
+    border: 15px solid #5bcef3;
+    background-color: #b4eafb;
+    border-radius: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 500px
+}
+
+button {
+    width: 80px;
+    height: 25px;
+    position: absolute;
+}
+
+.exit {
+    color: black;
+    width: 30px;
+    border-radius: 3px;
+    right: 0px
+}
+
+.ok {
+    background-color: #28a745;
+    color: white;
+    bottom: 10px;
+    left: 400px;
+}
+
+.help {
+    width: 20vw;
+    height: 20vh;
+    border: 15px solid #5bcef3;
+    background-color: #b4eafb;
+    border-radius: 10px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* sem přijdou tvoje styly */
