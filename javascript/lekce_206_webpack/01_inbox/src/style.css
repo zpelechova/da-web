@@ -1,0 +1,16 @@
+h1 {
+  color: rgb(39, 118, 155);
+  font-family: fantasy;
+}
+
+.message{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5cm;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subject{
+  color: rgb(39, 118, 155);
+  font-weight: 500;
+}
