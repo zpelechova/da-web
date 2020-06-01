@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakty</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="vue.js"></script>
+</head>
+
+<body>
+
+    <h1>Kontakty</h1>
+
+    <div id="app" >
+
+        <div class="prehled">
+            <div class="osoba">
+                <div class="jmeno">{{ jmeno }}</div>
+                <div class="telefon">{{ telefon }}</div>
+            </div>
+        </div>
+ 
+
+        <div class="detail">
+            <img class="foto" src="images/foto01.jpg" alt="jmeno">
+
+            <h2>{{ jmeno }} ({{ vek }})</h2>
+
+            <p class="telefon">{{ telefon }}</p>
+            <p class="pozice">{{ pozice }}</p>
+
+            <p class="prace">
+                Hledá práci: <span>ano, hledá práci</span>
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>

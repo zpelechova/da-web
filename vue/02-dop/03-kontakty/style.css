@@ -1,0 +1,81 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&subset=latin-ext');
+
+
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+
+body {
+	margin: 0;
+	padding: 30px;
+	min-height: 100vh;
+	font: 16px/1.5 'Merriweather', serif;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: #f5f5f5;
+}
+
+h1 {
+	margin: 0 0 30px 0;
+	font-size: 36px;
+	line-height: 1;
+	text-align: center;
+}
+
+/* ---------------------------------------------------- */
+
+#app {
+	display: flex;
+}
+
+.prehled {
+	flex: 0 0 400px;
+}
+
+.detail {
+	margin-left: 50px;
+	flex: 1;
+	padding: 15px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+
+.osoba {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 15px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+
+	margin-bottom: 5px;
+}
+
+.foto {
+	border-radius: 50%;
+	max-width: 200px;
+}
+
+.telefon,
+.pozice,
+.prace {
+	color: grey;
+	margin: 0 0 10px;
+}
+
+.prace {
+	margin-top: 20px;
+}
+
+.prace span {
+	font-size: 1.25em;
+	color: black;
+}
+
+
+
+

@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 2em;
+  font: 16px sans-serif;
+}
+
+img {
+  max-height: 50vh;
+  border-radius: 50%;
+  float: left;
+}
+
+.about {
+  margin-top: 20px;
+}
