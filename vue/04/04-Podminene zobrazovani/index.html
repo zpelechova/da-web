@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Podmíněné zobrazování</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="vue.js"></script>
+  </head>
+  <body>
+    <h1>Podmíněné zobrazování</h1>
+
+    <!-- s show -->
+    <div id="app">
+      <button v-on:click="toggle">Toggle</button>
+      <p v-show="text">Já jsem text, který je nebo není vidět!</p>
+
+      <p v-show="!text">
+        Já jsem text, který je vidět, když je první text schovaný. A schovám se,
+        když se ten první zobrazí.
+      </p>
+
+      <hr />
+
+      <p><strong>Otázka:</strong></p>
+      <select v-model="value">
+        <option value="a">Odpověd na otázku vesmíru, života a vůbec?</option>
+        <option value="b">Světově nejoblíbenější ovoce?</option>
+        <option value="c">Nejlepší zvíře na světě?</option>
+        <option value="d">Kolik ti je?</option>
+        <option value="e">Máš v bance milión?</option>
+      </select>
+
+      <p v-show="value === 'a'">
+        A) Je to 42. To ví přeci každý.
+      </p>
+
+      <p v-show="value === 'b'">
+        B) Kokos, jak jinak. Někdy i meloun. Nebo jahůdka. Mňam.
+      </p>
+
+      <p v-show="value === 'c'">
+        C) Pes. V Evropě je mazlivý a přátelský, v Asii zase dobře chutná.
+      </p>
+
+      <p v-show="value === 'd' || value === 'e'">
+        Na tuhle otázku odpověď nemáme.
+      </p>
+    </div>
+
+    <!-- s if -->
+    <!-- <div id="app">
+<button v-on:click='toggle'>Toggle</button>
+		<p v-if="text">Já jsem text, který je nebo není vidět!</p>
+
+		<p v-else>Já jsem text, který je vidět, když je první text schovaný. A schovám se, když se ten první zobrazí.</p>
+
+
+		<hr>
+
+		<p><strong>Otázka:</strong></p>
+		<select v-model='value'>
+			<option value="a">Odpověd na otázku vesmíru, života a vůbec?</option>
+			<option value="b">Světově nejoblíbenější ovoce?</option>
+			<option value="c">Nejlepší zvíře na světě?</option>
+			<option value="d">Kolik ti je?</option>
+			<option value="e">Máš v bance milión?</option>
+		</select>
+
+		<p v-if="value === 'a'">
+			A) Je to 42. To ví přeci každý.
+		</p>
+
+		<p v-else-if="value === 'b'">
+			B) Kokos, jak jinak. Někdy i meloun. Nebo jahůdka. Mňam.
+		</p>
+
+		<p v-else-if="value === 'c'">
+			C) Pes. V Evropě je mazlivý a přátelský, v Asii zase dobře chutná.
+		</p>
+
+
+		<p v-else>
+			Na tuhle otázku odpověď nemáme.
+		</p>
+	</div> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

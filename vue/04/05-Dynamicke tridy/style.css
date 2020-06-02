@@ -1,0 +1,27 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	margin: 2em;
+	font: 16px sans-serif;
+}
+
+.ctverec {
+	display: inline-block;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+}
+
+.cerveny {
+	background-color: red;
+}
+
+.zeleny {
+	background-color: green;
+}
+
+.modry {
+	background-color: blue;
+}

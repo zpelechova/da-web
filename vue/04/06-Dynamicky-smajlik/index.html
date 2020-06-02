@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dynamické CSS třídy</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.js"></script>
+</head>
+<body>
+
+
+	<h1>Generátor smajlíků</h1>
+
+	<div id="app">
+ 
+		<p>
+			<input type="radio" value="vesely" v-model="typ" > veselý<br>
+			<input type="radio" value="smutny" v-model="typ"> smutný
+		</p>
+
+		<select v-model="barva">
+			<option value="">Zvolte barvu:</option>
+			<option value="cerveny">červená</option>
+			<option value="zeleny">zelená</option>
+			<option value="modry">modrá</option>
+		</select>
+
+		<p>
+			<input type="checkbox" v-model="ramecek"> s rámečkem
+		</p>
+ 
+		<div class="smajlik" v-bind:class="[barva, {ramecek: ramecek}]">
+			<div v-if="typ === 'vesely'">:)</div>
+			<div v-else-if="typ === 'smutny'">:(</div>
+		</div>
+
+	</div>
+
+
+
+	<script src="index.js"></script>
+
+</body>
+</html>

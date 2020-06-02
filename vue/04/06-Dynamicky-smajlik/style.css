@@ -1,0 +1,41 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	margin: 2em;
+	font: 16px sans-serif;
+}
+
+.smajlik {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	border-radius: 50%;
+}
+
+.smajlik div {
+	font-size: 72px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.cerveny {
+	background-color: rgb(221, 12, 12);
+}
+
+.zeleny {
+	background-color: rgb(17, 167, 17);
+}
+
+.modry {
+	background-color: rgb(33, 119, 218);
+}
+
+.ramecek {
+	border: 10px solid black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Dynamické CSS třídy</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.js"></script>
+</head>
+<body>
+ 
+
+	<h1>Dynamické CSS třídy</h1>
+
+	<div id="app">
+		<div class="ctverec" v-bind:class="'cerveny'"></div>
+		<div class="ctverec" v-bind:class="{ zeleny: aktivni }"></div>
+		<div class="ctverec" v-on:click="toggle" v-bind:class="{ modry: modry}"></div>
+		<div class="ctverec" v-bind:class="trida"></div>
+		<input type="text" v-model="trida"> 
+		<div class="ctverec" v-bind:style="{ 'background-color': barva}"></div>
+		<input type="text" v-model="barva"> 
+	</div>
+
+
+	<script src="index.js"></script>
+
+</body>
+</html>
