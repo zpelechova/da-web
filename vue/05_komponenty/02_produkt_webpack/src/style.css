@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.product {
+  text-align: center;
+  margin: 5rem auto;
+  width: 20rem;
+}
+
+.product__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #b6262b;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.btn--done {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.quantity {
+  padding-left: 1rem;
+  border-radius: 5px;
+  line-height: 2rem;
+}
