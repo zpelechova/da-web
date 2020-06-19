@@ -73,12 +73,13 @@ Apify.main(async () => {
         }
       }
     };
-    
+
     message = `Nejdříve Vám Rohlík zboží doručí ${parsedSlots[0]}.`
   } else {
-    
+
     message = "Na vaši adresu zatím nedoručujeme."
   }
   console.log(message);
-  const data = 
+    // Then we save report to KVS        
+  await Apify.setValue('OUTPUT', message);
 });
