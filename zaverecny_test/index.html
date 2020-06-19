@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <button
+      class="btn"
+      v-on:click="btnClick"
+      v-bind:class="{ 'btn-active': active }"
+    >
+    {{ jmeno }}
+    </button>
+  </div>
+  <div class="row">
+    <div class="column">sloupec 1</div>
+    <div class="column">sloupec 2</div>
+    <div class="column">sloupec 3</div>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/*funkce na vložení data do inoputu - parametr funkce ID elementu pro datum  */
+/*funkce na vložení data do inputu - parametr funkce ID elementu pro datum  */
 function setDate(datePlaceholder) {
   const date = new Date();
 

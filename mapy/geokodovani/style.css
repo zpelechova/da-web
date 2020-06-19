@@ -1,0 +1,43 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
+}
+.app {
+  margin: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin: 5px;
+}
+
+input,
+button {
+  height: 100%;
+  border: 2px solid #145972;
+  color: white;
+  font-weight: medium;
+  font-size: larger;
+  width: 40vw;
+}
+input {
+  text-align: center;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #145972;
+  border-width: 0px;
+  margin-left: 5px;
+  }
+
+#map {
+  border-radius: 5px;
+  height: 80%;
+}
